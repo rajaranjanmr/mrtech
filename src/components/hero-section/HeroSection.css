@@ -1,0 +1,33 @@
+.hero {
+  background: url("/src/assets/hero_section.jpg") no-repeat center center/cover;
+  height: 400px;
+}
+
+.hero_h1 {
+  color: black;
+  font-size: 3rem;
+}
+
+.hero_para {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.hero_pos_abs {
+  position: absolute;
+  top: 13rem;
+  right: 16rem;
+  z-index: 998;
+}
+
+.hero_pos_abs_shade {
+  position: relative;
+  right: 0;
+  z-index: 997;
+  opacity: 0.5;
+  height: 400px;
+  width: 100%;
+  background-color: white;
+}

@@ -1,0 +1,48 @@
+.services {
+  margin: 3rem;
+  background-color: #fff;
+}
+
+.service_title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  width: 25rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.service-card p {
+  color: #666;
+}
+
+.color_black {
+  color: black;
+}
+
+.service_button {
+  cursor: pointer;
+  padding: 10px 1rem;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  background-color: #4cabd1;
+}
+
+.service_button_container {
+  text-align: center;
+  margin-top: auto;
+}
