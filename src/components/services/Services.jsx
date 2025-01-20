@@ -8,30 +8,25 @@ const Services = () => {
 
   return (
     <section className="services">
-      <h1 className="service_title">Tax Services</h1>
+      <h1 className="service_title">Our Services</h1>
       <div className="service-cards">
         {taxServices.map(({ title, servicesList, price }) => {
           return (
-            <div className="service-card">
+            <div
+              className="service-card"
+              onClick={() => {
+                setIsPortalOpen(true);
+              }}
+            >
               <h2 className="text_align_center">{title}</h2>
               {servicesList.map((serv) => (
                 <p>- {serv}</p>
               ))}
-              <h4>No Hidden Cost</h4>
-              <p>
+              {/* <h4>No Hidden Cost</h4> */}
+              {/* <p>
                 Starting at Just{" "}
                 <strong className="color_black">Rs.{price}</strong> only
-              </p>
-              <div className="service_button_container">
-                <button
-                  className="service_button"
-                  onClick={() => {
-                    setIsPortalOpen(true);
-                  }}
-                >
-                  Know More
-                </button>
-              </div>
+              </p> */}
             </div>
           );
         })}

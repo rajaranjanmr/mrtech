@@ -7,9 +7,9 @@ const HeroSection = () => {
       <p className="hero_pos_abs_shade"></p>
       <div className="hero-content hero_pos_abs">
         <h1 className="hero_h1">Empowering Your Business</h1>
-        <p className=" hero_para">
+        <h2 className=" hero_h2">
           Transforming strategies, optimizing processes, and delivering results.
-        </p>
+        </h2>
       </div>
     </section>
   );
