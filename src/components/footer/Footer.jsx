@@ -63,7 +63,7 @@ const Footer = ({ contactUsRef }) => {
       </div>
       <div className="footer-bottom">
         <p>
-          &copy; {new Date().getFullYear()} Travel Website. All rights reserved.
+          &copy; {new Date().getFullYear()} MR Tech Website. All rights reserved.
         </p>
       </div>
     </footer>
