@@ -1,9 +1,9 @@
 import aboutUsImage from "../../assets/aboutus_image.png";
 import "./AboutUs.css";
 
-const AboutUs = () => {
+const AboutUs = ({ aboutUsRef }) => {
   return (
-    <section className="about_us">
+    <section ref={aboutUsRef} className="about_us">
       <div className="about_us_section">
         <h1>About Us</h1>
         <div className="about_us_p">

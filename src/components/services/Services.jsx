@@ -3,14 +3,14 @@ import { PortalComponent } from "../portal-component/PortalComponent";
 import { taxServices } from "../../data/tax_services";
 import "./Services.css";
 
-const Services = () => {
+const Services = ({ servicesRef }) => {
   const [isPortalOpen, setIsPortalOpen] = useState(false);
 
   return (
-    <section className="services">
+    <section ref={servicesRef} className="services">
       <h1 className="service_title">Our Services</h1>
       <div className="service-cards">
-        {taxServices.map(({ title, servicesList, price }) => {
+        {taxServices.map(({ title, servicesList }) => {
           return (
             <div
               className="service-card"

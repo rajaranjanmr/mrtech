@@ -1,0 +1,30 @@
+.tech_img_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.tech_container {
+  padding: 2rem 5rem;
+  background-image: linear-gradient(to right, #0c2a5c, #b845c9);
+}
+
+.tech_img {
+  background-color: white;
+  height: 6rem;
+  width: 8rem;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+
+.tech_image_size {
+  height: 5rem;
+  margin-top: 8px;
+}
+
+.tech_h1 {
+  color: white;
+  margin-bottom: 2rem;
+}

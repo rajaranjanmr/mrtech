@@ -1,25 +1,29 @@
 import React from "react";
-import "./Header.css"; // Optional, for styling
+import "./Header.css";
 
-const Header = () => {
+const Header = ({
+  handleContactUsClick,
+  handleAboutUsClick,
+  handleServicesClick,
+}) => {
   return (
     <header className="header">
       <a href="#home" className="logo">
         <img src="/src/assets/logo.png" alt="MR Tech Logo" />
       </a>
-      {/* <nav>
+      <nav>
         <ul>
-          <li>
+          <li onClick={() => handleServicesClick()}>
             <a href="#services">Services</a>
           </li>
-          <li>
+          <li onClick={() => handleAboutUsClick()}>
             <a href="#about">About</a>
           </li>
-          <li>
-            <a href="#contact">Contact</a>
+          <li onClick={() => handleContactUsClick()}>
+            <a>Contact</a>
           </li>
         </ul>
-      </nav> */}
+      </nav>
     </header>
   );
 };

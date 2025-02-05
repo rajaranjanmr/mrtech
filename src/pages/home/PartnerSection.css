@@ -1,0 +1,31 @@
+.partner_img_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.partner_container {
+  padding: 2rem 5rem;
+  background-image: linear-gradient(to left, #0d0d6b, #1313eb);
+
+}
+
+.partner_img {
+  background-color: white;
+  height: 11rem;
+  width: 18rem;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 1rem;
+}
+
+.image_size {
+  height: 6rem;
+  margin-top: 2.5rem;
+}
+
+.partner_h1 {
+    color: white;
+    margin-bottom: 2rem;
+}
