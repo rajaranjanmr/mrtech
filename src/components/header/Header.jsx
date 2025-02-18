@@ -9,7 +9,7 @@ const Header = ({
   return (
     <header className="header">
       <a href="#home" className="logo">
-        <img src="/src/assets/logo.png" alt="MR Tech Logo" />
+        <img src="/src/assets/logo.png" alt="sacrro empowering Logo" />
       </a>
       <nav>
         <ul>

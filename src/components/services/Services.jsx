@@ -38,7 +38,8 @@ const Services = ({ servicesRef }) => {
             <div className="modal_content">
               <>
                 <p className="mb_1rem">
-                  Free online Guide. Give Us Missed Call or WhatsApp Us.
+                  Free online Guide. Give Us Missed Call or WhatsApp Us on +91
+                  7717764690.
                 </p>
                 <div className="text_align_center">
                   <button
