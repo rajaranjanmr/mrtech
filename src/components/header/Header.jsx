@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../../assets/logo.png";
 import "./Header.css";
 
 const Header = ({
@@ -9,7 +10,7 @@ const Header = ({
   return (
     <header className="header">
       <a href="#home" className="logo">
-        <img src="/src/assets/logo.png" alt="sacrro empowering Logo" />
+        <img src={Logo} alt="sacrro empowering Logo" />
       </a>
       <nav>
         <ul>
