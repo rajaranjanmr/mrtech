@@ -14,7 +14,7 @@ const AboutUs = ({ aboutUsRef }) => {
           </p>
           <p>
             We are the team of Experts of various backgrounds like{" "}
-            <strong>CAs, CMSs, CSs, Advocate, Engineers</strong> who are
+            <strong>CAs, CMAs, CSs, Advocate, Engineers</strong> who are
             available for providing quality services at very nominal rate.
           </p>
           <strong>CORE VALUES:</strong>
