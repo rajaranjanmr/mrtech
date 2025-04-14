@@ -42,12 +42,12 @@ const Footer = ({ contactUsRef }) => {
           <h3>Follow Us</h3>
           <ul className="social-links">
             <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                Facebook
+              <a href="https://www.linkedin.com/company/sacrro/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+                LinkedIn
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/rajaranjanmr715?igsh=eWZrMDdjNHNxdnpi" target="_blank" rel="noopener noreferrer">
                 Instagram
               </a>
             </li>
@@ -56,8 +56,7 @@ const Footer = ({ contactUsRef }) => {
 
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p className="">Office Address:</p>
-          <p>Email:</p>
+          <p className="">Office Address: 7th cross road Kathriguppe Main Road , Bansankhari, Bangalore - 560085</p>
           <p>Phone: +91 7717764690</p>
         </div>
       </div>
