@@ -34,7 +34,7 @@ const AboutUs = ({ aboutUsRef }) => {
         </div>
       </div>
       <div>
-        <img src={aboutUsImage} alt="about_us" />
+        <img className="aboutUsImageCss" src={aboutUsImage} alt="about_us" />
       </div>
     </section>
   );

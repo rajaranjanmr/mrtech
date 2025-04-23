@@ -69,3 +69,33 @@ ul {
 .mb_1rem {
   margin-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  .modal_content {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .modal_button {
+    font-size: 14px;
+    padding: 6px 1rem;
+  }
+}

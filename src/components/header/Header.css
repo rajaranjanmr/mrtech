@@ -26,3 +26,50 @@
 .header nav ul li a {
   font-size: 16px;
 }
+
+.menuIcon {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 480px) {
+  .destop_menu {
+    display: none;
+  }
+
+  .menuOpen {
+    position: absolute;
+    top: 5.6rem;
+    right: 0;
+    background-color: rgb(240, 248, 255, 0.9);
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 4rem;
+  }
+
+  .header nav ul li {
+    margin: 10px 0;
+  }
+
+  .header nav ul li a {
+    font-size: 1rem;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+}
+
+/* @media (max-width: 480px) {
+  .header nav ul li a {
+    font-size: 16px;
+  }
+
+  .header {
+    padding: 0.8rem;
+  }
+} */
