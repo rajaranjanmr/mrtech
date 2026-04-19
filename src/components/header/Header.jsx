@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 import MenuIcon from "../../assets/menu.png";
 import "./Header.css";
@@ -9,26 +10,35 @@ const Header = ({
   handleServicesClick,
 }) => {
   const [navMenu, setNavMenu] = useState(false);
+  const closeMenu = () => setNavMenu(false);
 
   return (
     <header className="header">
-      <a href="#home" className="logo">
+      <Link to="/" className="logo">
         <img src={Logo} alt="sacrro empowering Logo" />
-      </a>
+      </Link>
       <nav className="destop_menu">
         <ul>
-          <li onClick={() => handleServicesClick()}>
-            <a href="#services">Services</a>
+          <li
+            onClick={() => {
+              handleServicesClick();
+            }}
+          >
+            <Link to="/#services">Services</Link>
           </li>
-          <li onClick={() => handleAboutUsClick()}>
-            <a href="#about">About</a>
+          <li
+            onClick={() => {
+              handleAboutUsClick();
+            }}
+          >
+            <Link to="/#about">About</Link>
           </li>
           <li
             onClick={() => {
               handleContactUsClick();
             }}
           >
-            <a>Contact</a>
+            <Link to="/#contact">Contact</Link>
           </li>
         </ul>
       </nav>
@@ -38,26 +48,26 @@ const Header = ({
             <li
               onClick={() => {
                 handleServicesClick();
-                setNavMenu(!navMenu);
+                closeMenu();
               }}
             >
-              <a href="#services">Services</a>
+              <Link to="/#services">Services</Link>
             </li>
             <li
               onClick={() => {
                 handleAboutUsClick();
-                setNavMenu(!navMenu);
+                closeMenu();
               }}
             >
-              <a href="#about">About</a>
+              <Link to="/#about">About</Link>
             </li>
             <li
               onClick={() => {
                 handleContactUsClick();
-                setNavMenu(!navMenu);
+                closeMenu();
               }}
             >
-              <a>Contact</a>
+              <Link to="/#contact">Contact</Link>
             </li>
           </ul>
         </nav>

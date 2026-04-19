@@ -7,7 +7,7 @@ const Services = ({ servicesRef }) => {
   const [isPortalOpen, setIsPortalOpen] = useState(false);
 
   return (
-    <section ref={servicesRef} className="services">
+    <section id="services" ref={servicesRef} className="services">
       <h1 className="service_title">Our Services</h1>
       <div className="service-cards">
         {taxServices.map(({ title, servicesList }) => {

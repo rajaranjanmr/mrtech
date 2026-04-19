@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import { Footer, Header } from "./components";
+import { ContactBanner, Footer, Header, WhatsAppFloat } from "./components";
 import { Home } from "./pages";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 
@@ -22,24 +22,29 @@ function App() {
 
   return (
     <div className="App">
-      <main className="">
+      <main className="app_main">
         <Router>
-          <Header
-            handleContactUsClick={handleContactUsClick}
-            handleAboutUsClick={handleAboutUsClick}
-            handleServicesClick={handleServicesClick}
-          />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <Home servicesRef={servicesRef} aboutUsRef={aboutUsRef} />
-              }
+          <div className="app_shell">
+            <Header
+              handleContactUsClick={handleContactUsClick}
+              handleAboutUsClick={handleAboutUsClick}
+              handleServicesClick={handleServicesClick}
             />
-          </Routes>
+            <ContactBanner />
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <Home servicesRef={servicesRef} aboutUsRef={aboutUsRef} />
+                }
+              />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </div>
         </Router>
       </main>
       <Footer contactUsRef={contactUsRef} />
+      <WhatsAppFloat />
     </div>
   );
 }
