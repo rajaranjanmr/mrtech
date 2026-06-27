@@ -3,6 +3,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
+  align-items: center;
 }
 
 .partner_container {
@@ -15,14 +16,15 @@
   background-color: white;
   height: 11rem;
   width: 18rem;
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border-radius: 1rem;
 }
 
 .image_size {
   height: 6rem;
-  margin-top: 2.5rem;
 }
 
 .partner_h1 {
@@ -43,7 +45,6 @@
 
   .image_size {
     height: 5rem;
-    margin-top: 2rem;
   }
 
   .partner_h1 {
@@ -59,13 +60,13 @@
 
   .partner_img {
     width: 100%;
-    max-width: 90%;
+    max-width: 18rem;
+    min-height: 8rem;
     height: auto;
-    padding: 1rem 0;
+    padding: 1rem;
   }
 
   .image_size {
     height: 4rem;
-    margin-top: 1rem;
   }
 }

@@ -1,7 +1,7 @@
 .header {
   background-color: rgb(255, 255, 255);
   color: #333;
-  padding: 20px;
+  padding: 1rem 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +13,7 @@
 
 .header .logo img {
   height: 3rem;
+  display: block;
 }
 
 .header nav ul {
@@ -31,28 +32,36 @@
   display: none;
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .header {
+    padding: 0.8rem 1rem;
+  }
+
   .destop_menu {
     display: none;
   }
 
   .menuOpen {
     position: absolute;
-    top: 5.6rem;
+    top: 100%;
     right: 0;
-    background-color: rgb(240, 248, 255, 0.9);
+    left: 0;
+    background-color: rgba(240, 248, 255, 0.98);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
   }
 
   .header nav ul {
     flex-direction: column;
     width: 100%;
-    padding: 4rem;
+    padding: 1rem;
+    align-items: center;
   }
 
   .header nav ul li {
-    margin: 10px 0;
+    margin: 0.5rem 0;
   }
 
   .header nav ul li a {
@@ -61,6 +70,7 @@
 
   .menuIcon {
     display: block;
+    flex-shrink: 0;
   }
 }
 

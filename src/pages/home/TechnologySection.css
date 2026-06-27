@@ -3,6 +3,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 2rem;
+  align-items: center;
 }
 
 .tech_container {
@@ -14,14 +15,15 @@
   background-color: white;
   height: 6rem;
   width: 8rem;
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border-radius: 8px;
 }
 
 .tech_image_size {
   height: 5rem;
-  margin-top: 8px;
 }
 
 .tech_h1 {
@@ -41,7 +43,6 @@
 
   .tech_image_size {
     height: 4rem;
-    margin-top: 4px;
   }
 
   .tech_h1 {
@@ -56,15 +57,14 @@
   }
 
   .tech_img {
-    width: 100%;
-    max-width: 6rem;
+    width: calc(50% - 0.5rem);
+    max-width: 7rem;
+    min-height: 5rem;
     height: auto;
-    margin: 0 auto;
     padding: 0.5rem;
   }
 
   .tech_image_size {
     height: 3.5rem;
-    margin-top: 0;
   }
 }

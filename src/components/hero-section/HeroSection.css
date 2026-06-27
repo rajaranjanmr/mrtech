@@ -1,6 +1,7 @@
 .hero {
   background: url("/src/assets/hero_section.jpg") no-repeat center center/cover;
   height: 500px;
+  position: relative;
 }
 
 .hero_h1 {
@@ -15,9 +16,11 @@
 
 .hero_pos_abs {
   position: absolute;
-  top: 16rem;
+  top: 50%;
   right: 16rem;
+  transform: translateY(-50%);
   z-index: 998;
+  max-width: min(34rem, calc(100% - 2rem));
 }
 
 .hero_pos_abs_shade {
@@ -31,7 +34,6 @@
 
 @media (max-width: 1024px) {
   .hero_pos_abs {
-    top: 12rem;
     right: 8rem;
   }
 
@@ -50,10 +52,10 @@
   }
 
   .hero_pos_abs {
-    top: 10rem;
     right: 2rem;
     left: 2rem;
     text-align: center;
+    max-width: none;
   }
 
   .hero_pos_abs_shade {
@@ -79,7 +81,6 @@
   }
 
   .hero_pos_abs {
-    top: 8rem;
     left: 1rem;
     right: 1rem;
   }

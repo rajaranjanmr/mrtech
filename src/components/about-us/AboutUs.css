@@ -9,6 +9,11 @@
   max-width: 40%;
 }
 
+.aboutUsImageCss {
+  max-width: 100%;
+  height: auto;
+}
+
 .about_us_p {
   display: flex;
   flex-direction: column;
@@ -23,8 +28,7 @@
   }
 
   .aboutUsImageCss {
-    width: 40rem;
-    height: 30rem;
+    width: min(40rem, 100%);
   }
 }
 
@@ -40,8 +44,7 @@
   }
 
   .aboutUsImageCss {
-    width: 28rem;
-    height: 20rem;
+    width: min(28rem, 100%);
   }
 }
 
@@ -56,7 +59,6 @@
   }
 
   .aboutUsImageCss {
-    width: 20rem;
-    height: 15rem;
+    width: 100%;
   }
 }
